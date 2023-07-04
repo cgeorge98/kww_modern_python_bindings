@@ -2,7 +2,7 @@
 
 This is **NOT** the home page of **libkww**, a small numeric library that provides
 the cosine and sine **Fourier transform of Kohlrausch's stretched exponential function**
-exp(-t^beta). The original repoistory can be found [here](https://https://jugit.fz-juelich.de/mlz/kww/-/tree/main/).
+exp(-t^beta). The original repoistory can be found [here](https://jugit.fz-juelich.de/mlz/kww/-/tree/main/).
 
 This Fourier transform is also known as the **Kohlrausch-Williams-Watts function**.
 In condensed-matter physics, it is often used to describe frequency-domain
