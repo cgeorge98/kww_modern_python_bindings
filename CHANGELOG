@@ -1,0 +1,83 @@
+kww-3.8.0, released 30jan23:
+   Set up CI and CMake to support Mingw-64 under Windows.
+   Correct fabs -> fabsl.
+   Use __float128 under gcc to support arm64 (where long double has only 64 bits).
+   Fix underflow bug in high-w expansion (reported by Markus Appel).
+
+Homepage moved to https://jugit.fz-juelich.de/mlz/kww, 17mar19
+
+kww-3.7.2, uploaded 7feb19:
+   set option LIB_MAN only if variable LIB_MAN is not set (for CMake<3.13)
+
+kww-3.7.1, uploaded 4feb19:
+   option LIB_MAN, to suppress unnecessary steps in automated builds
+
+kww-3.7, released 1feb19:
+   Restore kww.pc.
+   Impose C99.
+
+kww-3.6, released 7oct18:
+   Migrate from Autotools to CMake.
+
+kww-3.5, released 7oct14:
+   With Python wrapper (by Antti Soininen).
+
+kww-3.4, released 29aug14:
+   Correction for thread-safety (patch by Antti Soininen).
+
+kww-3.3, released 20nov13:
+   Dropped return criterion (iii) of paper Sect. 4.4 for high-w expansion,
+     which overestimated cancellation when intermediate value of sum(s)
+     was close to zero.
+
+kww-3.2, released 19nov13:
+   Cleanup configure.ac; by default, no static library.
+   Test programs no longer install to $bindir.
+   Now supporting pkg-config.
+   Corrected double use of range index j=0 in kww_mid, following bug report
+     by Antti Soininen.
+   Added debug messages to kww_mid.
+
+kww-3.1, released 18feb13:
+   Directory "doc" renamed "man".
+   Added a few comments.
+   More tests in configure.
+
+kww-3.0, released 11oct12:
+
+   ---> This is the version described in Algorithms 5, 604-628 (2012) <---
+
+   Now also computing the primitive P_beta of Q_beta.
+   Fixed error in kwws for w<0.
+
+kww-2.0, released 1sep12:
+   Now returning double precision.
+   Lots of changes to achieve that accuracy.
+   White paper mostly rewritten (version 3).
+
+kww-1.5, released 24aug12:
+   kwwchecks: compare series expansion with direct integration
+   man page: new web sites
+
+kww-1.4, released 22aug12:
+   Diagnostic variable kww_num_of_terms instead of ill-defined kww_iterations.
+   Newly computed limits for series expansion.
+   Auxiliary script kwwlimits.rb revised and commented.
+   Auxiliary script kwwchecks.rb written.
+
+kww-1.3, released 16apr10:
+   Man pages now produced by make; finally got rid of dmake.
+   Correct man page: integral runs over dt, not dw.
+   Shared library now has correct version number (set in configure.ac)
+
+kww-1.2, released 25feb10:
+   Write err msg to stderr; exit with standard errno.
+   Replaced asciidoc by pod.
+   "make install" now also installs man page.
+
+kww-1.1, released 03feb10:
+   Corrected bug discovered by Albena I. Nielsen:
+      kww_f_mid: separate array initializations for sin and cos transform.
+
+kww-1.0, released 29sep09:
+   Initial release.

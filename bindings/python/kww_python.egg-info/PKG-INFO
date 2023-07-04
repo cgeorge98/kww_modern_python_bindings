@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: kww-python
+Version: 0.0.0
+Summary: Computes the Kohlrausch-Williams-Watts (Fourier-Laplace transform of the stretched exponential function)
+Home-page: http://apps.jcns.fz-juelich.de/kww
+Author: Joachim Wuttke
+Author-email: j.wuttke@fz-juelich.de
+License: GPLv3

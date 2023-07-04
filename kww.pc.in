@@ -1,0 +1,10 @@
+prefix=@destination@
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: kww
+Description: Kohlrausch-Williams-Watts function
+Version: @kww_VERSION@
+Libs: -L${libdir} -lkww
+Cflags: -I${includedir}

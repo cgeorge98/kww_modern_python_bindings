@@ -1,0 +1,74 @@
+=pod
+
+=begin html
+
+<link rel="stylesheet" href="podstyle.css" type="text/css" />
+
+=end html
+
+=head1 NAME
+
+kww - Kohlrausch-Williams-Watts function
+
+=head1 SYNOPSIS
+
+B<#include <kww.h>>
+
+B<double kwwc (const double omega, const double beta );>
+
+B<double kwws (const double omega, const double beta );>
+
+B<double kwwp (const double omega, const double beta );>
+
+=head1 DESCRIPTION
+
+Laplace-Fourier transform of the stretched exponential function exp(-t^beta).
+
+B<kwwc> returns: integral from 0 to +infinity dt cos(omega*t) exp(-t^beta)
+
+B<kwws> returns: integral from 0 to +infinity dt sin(omega*t) exp(-t^beta)
+
+B<kwwp> returns: primitive of kwwc: integral from 0 to omega dw' kwwc(w',beta)
+
+For sufficiently small or large values of |omega|,
+series expansions are used; otherwise numeric integration is performed
+using a double-exponential transform.
+
+Allowed parameter range: 0.1 <= beta <= 2.0. However, kwwc is not fully supported for 1.9 < beta < 2.0: For some omega the numeric integration will not attain full accuracy. In these cases, 0 is returned.
+
+=head1 ERRORS
+
+On error, a message is written to stderr, and the program exits with errno
+EDOM (beta out of range) or
+ENOMEM (workspace allocation failed) or
+ENOSYS (no convergence in the parameter range that ought to be fully supported; please report to the author).
+
+=head1 RESOURCES
+
+Project web site: L<https://jugit.fz-juelich.de/mlz/kww>
+
+=head1 REFERENCE
+
+J Wuttke: Fourier Transform of the Stretched Exponential Function:
+Analytic Error Bounds, Double Exponential Transform,
+and Open-Source Implementation libkww. http://arxiv.org/abs/0911.4796
+
+=head1 BUG REPORTS
+
+Please report bugs to the author.
+
+Failures of the cosine transform in the range 1.9 < beta < 2.0
+are not considered bugs. Any other failed convergence should be reported,
+indicating the values of beta and omega with 17 digits precision.
+
+=head1 AUTHOR
+
+Joachim Wuttke <j.wuttke@fz-juelich.de>
+
+=head1 COPYING
+
+Copyright (C) 2009, 2012 Joachim Wuttke.
+
+Software: GNU General Public License (GPL).
+
+This documentation: Creative Commons Attribution Share Alike.

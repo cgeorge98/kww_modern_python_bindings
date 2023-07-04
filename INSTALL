@@ -1,0 +1,12 @@
+Build&install are based on CMake.
+Out-of-source build is enforced.
+
+Get the source archive (tgz) from
+https://jugit.fz-juelich.de/mlz/kww/releases.
+Unpack the archive, then go to the source directory and do:
+
+mkdir build
+cd build
+cmake ..
+make
+make install

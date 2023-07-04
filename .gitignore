@@ -1,0 +1,12 @@
+*.bak
+*.patch
+*.tmp
+
+# doxygen generated
+dox/
+latex/
+html/
+
+# build directories
+build/
+mybuild/

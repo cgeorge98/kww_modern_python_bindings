@@ -1,0 +1,11 @@
+/usr/local/lib64/python3.11/site-packages/kww_python-0.0.0-py3.11-linux-x86_64.egg/_kww.cpython-311-x86_64-linux-gnu.so
+/usr/local/lib64/python3.11/site-packages/kww_python-0.0.0-py3.11-linux-x86_64.egg/_kww.py
+/usr/local/lib64/python3.11/site-packages/kww_python-0.0.0-py3.11-linux-x86_64.egg/kww.py
+/usr/local/lib64/python3.11/site-packages/kww_python-0.0.0-py3.11-linux-x86_64.egg/EGG-INFO/PKG-INFO
+/usr/local/lib64/python3.11/site-packages/kww_python-0.0.0-py3.11-linux-x86_64.egg/EGG-INFO/SOURCES.txt
+/usr/local/lib64/python3.11/site-packages/kww_python-0.0.0-py3.11-linux-x86_64.egg/EGG-INFO/dependency_links.txt
+/usr/local/lib64/python3.11/site-packages/kww_python-0.0.0-py3.11-linux-x86_64.egg/EGG-INFO/native_libs.txt
+/usr/local/lib64/python3.11/site-packages/kww_python-0.0.0-py3.11-linux-x86_64.egg/EGG-INFO/not-zip-safe
+/usr/local/lib64/python3.11/site-packages/kww_python-0.0.0-py3.11-linux-x86_64.egg/EGG-INFO/top_level.txt
+/usr/local/lib64/python3.11/site-packages/kww_python-0.0.0-py3.11-linux-x86_64.egg/__pycache__/_kww.cpython-311.pyc
+/usr/local/lib64/python3.11/site-packages/kww_python-0.0.0-py3.11-linux-x86_64.egg/__pycache__/kww.cpython-311.pyc

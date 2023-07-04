@@ -1,0 +1,27 @@
+Python wrapper for kww.
+=======================
+
+
+Compile and install:
+--------------------
+
+$ python setup.py install --record files.txt
+
+
+Use:
+----
+
+$ python
+>>> from kww import kwwc
+>>> kwwc( omega, beta )
+
+And similarly for kwws, kwwp.
+
+
+Uninstall:
+----------
+
+Unfortunately, setup.py provides no uninstall command.
+
+$ xargs rm -- < files.txt
+$ rm -r build files.txt kww.py kww_wrap.c
